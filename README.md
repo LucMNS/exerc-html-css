@@ -21,7 +21,7 @@ Use a pasta principal como raiz do servidor. Algumas páginas usam caminhos inic
 
 ## Trilha de aprendizagem
 
-### Nível 1 - Primeiros passos com HTML · exercícios 01–07
+### Nível 1 - Primeiros passos com HTML · exercícios 01-07
 
 Estrutura do documento, títulos, parágrafos, formatação, citações, comentários e atributos.
 
@@ -33,7 +33,7 @@ Estrutura do documento, títulos, parágrafos, formatação, citações, coment�
 - [06 - Comentários para organizar o código](<Nível 1/exercicio-06/index.html>)
 - [07 - Trabalhando com atributos HTML](<Nível 1/exercicio-07/index.html>)
 
-### Nível 2 - Links, imagens e navegação · exercícios 08–12
+### Nível 2 - Links, imagens e navegação · exercícios 08-12
 
 Hyperlinks, imagens, páginas de apresentação, navegação entre páginas e personalização da aba do navegador.
 
@@ -43,7 +43,7 @@ Hyperlinks, imagens, páginas de apresentação, navegação entre páginas e pe
 - [11 - Navegação entre páginas](<Nível 2/exercicio-11/index.html>)
 - [12 - Página com favicon e título](<Nível 2/exercicio-12/index.html>)
 
-### Nível 3 - Organização de informações · exercícios 13–20
+### Nível 3 - Organização de informações · exercícios 13-20
 
 Listas, tabelas, elementos de bloco e em linha, organização com `div`, classes, IDs e botões.
 
@@ -56,14 +56,14 @@ Listas, tabelas, elementos de bloco e em linha, organização com `div`, classes
 - [19 - Identificando elementos com ID](<Nível 3/exercicio-19/index.html>)
 - [20 - Página com botões](<Nível 3/exercicio-20/index.html>)
 
-### Nível 4 - Recursos complementares do HTML · exercícios 21–22
+### Nível 4 - Recursos complementares do HTML · exercícios 21-22
 
 Conteúdo externo incorporado com `iframe` e primeiro contato com JavaScript em uma página HTML.
 
 - [21 - Incorporando conteúdo externo](<Nível 4/exercicio-21/index.html>)
 - [22 - Primeiro contato com JavaScript](<Nível 4/exercicio-22/index.html>)
 
-### Nível 5 - Introdução ao CSS · exercícios 23–30
+### Nível 5 - Introdução ao CSS · exercícios 23-30
 
 Aplicação de estilos, sintaxe e seletores CSS, cores, fundos, bordas, margens, espaçamentos e integração dos conhecimentos.
 
@@ -83,11 +83,11 @@ Aplicação de estilos, sintaxe e seletores CSS, cores, fundos, bordas, margens,
 ├── index.html                # Menu principal com os 30 exercícios
 ├── css/
 │   └── style.css             # Estilos compartilhados do portfólio
-├── Nível 1/                  # Exercícios 01–07: fundamentos do HTML
-├── Nível 2/                  # Exercícios 08–12: links e imagens
-├── Nível 3/                  # Exercícios 13–20: organização do conteúdo
-├── Nível 4/                  # Exercícios 21–22: iframe e JavaScript
-└── Nível 5/                  # Exercícios 23–30: CSS e projeto integrador
+├── Nível 1/                  # Exercícios 01-07: fundamentos do HTML
+├── Nível 2/                  # Exercícios 08-12: links e imagens
+├── Nível 3/                  # Exercícios 13-20: organização do conteúdo
+├── Nível 4/                  # Exercícios 21-22: iframe e JavaScript
+└── Nível 5/                  # Exercícios 23-30: CSS e projeto integrador
 ```
 
 Cada pasta `exercicio-XX` contém uma página `index.html` com a apresentação da atividade. As subpastas **Código** guardam páginas para consultar o código-fonte, e as pastas com o nome do exercício guardam os exemplos executáveis e seus recursos, como imagens e folhas de estilo. A estrutura pode variar conforme a atividade.
