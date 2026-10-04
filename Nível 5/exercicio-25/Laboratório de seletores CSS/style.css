@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #243447;
+  background: #edf4f2;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.cabecalho {
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  background: #164e63;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+}
+
+.cabecalho p {
+  margin: 0;
+}
+
+.etiqueta {
+  color: #f4c95d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+.laboratorio {
+  display: grid;
+  gap: 20px;
+}
+
+.painel {
+  padding: 24px;
+  background: #ffffff;
+  border: 2px solid #c8d8d5;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(22 78 99 / 10%);
+}
+
+/* Seletor agrupado: h2 e h3 recebem a mesma cor. */
+.painel h2,
+.cartao h3 {
+  color: #287271;
+}
+
+.painel h2 {
+  margin-top: 0;
+}
+
+.explicacao {
+  background: #f8fbfa;
+}
+
+.explicacao li {
+  margin-bottom: 8px;
+}
+
+.instrucao {
+  margin-bottom: 20px;
+}
+
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Seletor por classe: todos os cartões compartilham esta base. */
+.cartao {
+  padding: 18px;
+  background: #f5f9f8;
+  border: 3px solid #81b29a;
+  border-radius: 6px;
+}
+
+.cartao h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+/* Seletor descendente: apenas os parágrafos dentro de cartões mudam. */
+.cartao p {
+  padding: 10px;
+  background: #ffffff;
+  border-left: 4px solid #81b29a;
+}
+
+/* Outra classe cria uma aparência diferente para esta categoria. */
+.cartao-classe {
+  background: #fff5df;
+  border-color: #e09f3e;
+}
+
+.cartao-classe h3 {
+  color: #b26e00;
+}
+
+/* Seletor por ID: aplica um destaque único ao cartão especial. */
+#cartao-especial {
+  background: #e8f0ff;
+  border-color: #3478c8;
+}
+
+#cartao-especial h3 {
+  color: #205493;
+}
+
+.descendente {
+  border-left: 8px solid #f4c95d;
+}
+
+/* Este seletor alcança somente li que descendem desta seção. */
+.descendente li {
+  width: fit-content;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  background: #fff5df;
+}
+
+@media (max-width: 800px) {
+  .cartoes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  .cabecalho,
+  .painel {
+    padding: 22px 18px;
+  }
+
+  .cabecalho h1 {
+    font-size: 1.8rem;
+  }
+}

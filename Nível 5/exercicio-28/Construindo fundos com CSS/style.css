@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #243447;
+  background-color: #edf4f2;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  max-width: 1100px;
+  padding: 24px 20px 40px;
+  margin: 0 auto;
+}
+
+.capa,
+.secao {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.capa {
+  display: flex;
+  min-height: 420px;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 28px;
+  color: #ffffff;
+  background-color: #164e63;
+  background-image:
+    linear-gradient(rgb(9 35 48 / 58%), rgb(9 35 48 / 72%)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.capa-conteudo {
+  max-width: 650px;
+}
+
+.capa h1 {
+  margin: 8px 0 14px;
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  line-height: 1.1;
+}
+
+.capa p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.etiqueta {
+  color: #f4c95d;
+  font-size: 0.85rem !important;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+}
+
+.secao {
+  min-height: 270px;
+  padding: 36px;
+}
+
+.secao h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.secao p {
+  max-width: 680px;
+  margin-bottom: 0;
+}
+
+.cor-solida {
+  color: #ffffff;
+  background-color: #287271;
+}
+
+.imagem-fundo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #174a6e;
+  background-image:
+    linear-gradient(90deg, rgb(11 37 54 / 82%), rgb(11 37 54 / 25%)),
+    url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.conteudo-sobreposto {
+  max-width: 600px;
+}
+
+.padrao-fundo {
+  background-color: #fff5df;
+  background-image: radial-gradient(#e09f3e 1.5px, transparent 1.5px);
+  background-position: 12px 12px;
+  background-repeat: repeat;
+  background-size: 24px 24px;
+}
+
+.padrao-fundo h2 {
+  color: #8a5700;
+}
+
+.padrao-fundo p {
+  padding: 16px;
+  background-color: rgb(255 255 255 / 90%);
+  border-left: 5px solid #e09f3e;
+}
+
+@media (max-width: 560px) {
+  main {
+    padding: 14px 14px 28px;
+  }
+
+  .capa {
+    min-height: 360px;
+    padding: 32px 20px;
+  }
+
+  .secao {
+    min-height: 240px;
+    padding: 28px 22px;
+  }
+}

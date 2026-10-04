@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Classes Reutilizáveis</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #ffffff;
+        width: 280px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        font-size: 1.3em;
+      }
+
+      .frontend h3 {
+        color: #e67e22;
+      }
+      .backend h3 {
+        color: #8e44ad;
+      }
+      .dados h3 {
+        color: #16a085;
+      }
+
+      .online {
+        border-top: 6px solid #3498db;
+      }
+      .online::after {
+        content: "Formato: EAD / Online";
+        display: block;
+        margin-top: 15px;
+        font-size: 0.85em;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      .presencial {
+        border-top: 6px solid #2ecc71;
+      }
+      .presencial::after {
+        content: "Formato: Presencial";
+        display: block;
+        margin-top: 15px;
+        font-size: 0.85em;
+        color: #2ecc71;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card online backend">
+      <h3>Python para Sistemas</h3>
+      <p>
+        Aprenda a construir lógicas de servidor e automações complexas
+        utilizando Python e frameworks modernos.
+      </p>
+    </div>
+
+    <div class="card presencial frontend">
+      <h3>Desenvolvimento com React e JS</h3>
+      <p>
+        Domine a criação de interfaces dinâmicas, Progressive Web Apps (PWAs) e
+        componentes utilizando JavaScript e React.
+      </p>
+    </div>
+
+    <div class="card online dados">
+      <h3>Modelagem de Dados com SQL</h3>
+      <p>
+        Aprenda a estruturar, consultar e proteger bancos de dados relacionais
+        eficientes para aplicações SaaS.
+      </p>
+    </div>
+
+    <div class="card presencial backend">
+      <h3>Programação C++ Avançada</h3>
+      <p>
+        Aprofunde-se no desenvolvimento de software de alta performance,
+        manipulação de memória e orientação a objetos em C++.
+      </p>
+    </div>
+
+    <div class="card online frontend">
+      <h3>Interfaces de Alta Conversão</h3>
+      <p>
+        Técnicas avançadas de HTML, CSS e UI/UX para garantir a melhor
+        experiência do usuário na internet.
+      </p>
+    </div>
+
+    <div class="card presencial backend">
+      <h3>Análise e Desenvolvimento</h3>
+      <p>
+        Práticas ágeis, levantamento de requisitos e arquitetura de software
+        para transformar ideias em sistemas completos.
+      </p>
+    </div>
+  </body>
+</html>

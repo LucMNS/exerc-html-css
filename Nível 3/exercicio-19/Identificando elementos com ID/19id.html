@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identificando elementos com ID</title>
+    <style>
+      :root {
+        --azul: #164e63;
+        --verde: #287271;
+        --amarelo: #f4c95d;
+        --fundo: #eef3f8;
+        --texto: #1f2937;
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--texto);
+        background: var(--fundo);
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      .topo {
+        padding: 32px 20px;
+        color: #ffffff;
+        background: var(--azul);
+        text-align: center;
+      }
+
+      .topo h1 {
+        margin: 0 0 8px;
+      }
+
+      .topo p {
+        margin: 0;
+      }
+
+      .menu {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 14px 20px;
+        background: #ffffff;
+        border-bottom: 3px solid var(--amarelo);
+      }
+
+      .menu a,
+      .voltar {
+        padding: 7px 12px;
+        color: var(--azul);
+        border-radius: 4px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .menu a:hover,
+      .voltar:hover {
+        color: #ffffff;
+        background: var(--verde);
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px 20px 40px;
+      }
+
+      .secao {
+        min-height: 430px;
+        padding: 32px;
+        margin-bottom: 24px;
+        background: #ffffff;
+        border-left: 8px solid var(--verde);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgb(22 78 99 / 10%);
+      }
+
+      .secao:nth-child(even) {
+        border-left-color: #e09f3e;
+      }
+
+      .secao h2 {
+        margin-top: 0;
+        color: var(--azul);
+      }
+
+      .secao p {
+        max-width: 680px;
+      }
+
+      .voltar {
+        display: inline-block;
+        margin-top: 24px;
+        background: var(--amarelo);
+      }
+
+      @media (max-width: 560px) {
+        .secao {
+          min-height: 380px;
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body id="topo">
+    <header class="topo">
+      <h1>Minha jornada na tecnologia</h1>
+      <p>Use o menu para navegar entre as quatro seções desta página.</p>
+    </header>
+
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+      <section class="secao" id="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+          Estou aprendendo desenvolvimento web e conhecendo as possibilidades de
+          criar interfaces usando HTML e CSS.
+        </p>
+        <p>
+          O atributo <strong>id</strong> identifica um elemento de forma única
+          dentro da página, permitindo que um link encontre exatamente esta
+          seção.
+        </p>
+        <a class="voltar" href="#topo">Voltar ao topo</a>
+      </section>
+
+      <section class="secao" id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Estas são algumas habilidades que estou desenvolvendo:</p>
+        <ul>
+          <li>Estruturação de páginas com HTML.</li>
+          <li>Estilização e organização visual com CSS.</li>
+          <li>Criação de layouts responsivos.</li>
+        </ul>
+        <a class="voltar" href="#topo">Voltar ao topo</a>
+      </section>
+
+      <section class="secao" id="projetos">
+        <h2>Projetos</h2>
+        <p>
+          Já pratiquei páginas com textos, imagens, links, listas e cartões de
+          cursos. Cada exercício ajuda a construir uma base mais sólida.
+        </p>
+        <p>
+          Com IDs diferentes, cada projeto também poderia ser acessado por um
+          link específico, sem precisar procurar manualmente na página.
+        </p>
+        <a class="voltar" href="#topo">Voltar ao topo</a>
+      </section>
+
+      <section class="secao" id="contato">
+        <h2>Contato</h2>
+        <p>
+          Para entrar em contato, envie uma mensagem pelo formulário ou visite
+          meu perfil profissional.
+        </p>
+        <p>Obrigado por conhecer minha jornada de aprendizagem!</p>
+        <a class="voltar" href="#topo">Voltar ao topo</a>
+      </section>
+    </main>
+  </body>
+</html>

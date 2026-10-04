@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Elementos Block e Inline&lt;/title&gt;
+    &lt;style&gt;
+      :root {
+        --background: #f4f7fb;
+        --text: #172033;
+        --block: #d8e9ff;
+        --block-border: #3478c8;
+        --inline: #ffe0b2;
+        --inline-border: #d87800;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 20px;
+        color: var(--text);
+        background: var(--background);
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1 {
+        margin-top: 0;
+        color: #205493;
+      }
+
+      .intro,
+      .demonstracao {
+        padding: 20px;
+        margin-bottom: 24px;
+        background: var(--white);
+        border: 1px solid #d5deeb;
+        border-radius: 8px;
+      }
+
+      .bloco {
+        padding: 12px 16px;
+        margin: 12px 0;
+        background: var(--block);
+        border-left: 6px solid var(--block-border);
+      }
+
+      .inline {
+        padding: 3px 6px;
+        background: var(--inline);
+        border: 1px solid var(--inline-border);
+        border-radius: 4px;
+      }
+
+      .legenda {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 560px) {
+        body {
+          padding: 24px 14px;
+        }
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Entendendo Block e Inline&lt;/h1&gt;
+
+    &lt;div class="intro"&gt;
+      &lt;p&gt;
+        Elementos &lt;strong class="inline"&gt;block&lt;/strong&gt; ocupam toda a largura
+        disponível e começam em uma nova linha. Elementos
+        &lt;strong class="inline"&gt;inline&lt;/strong&gt; ocupam apenas o espaço do seu
+        conteúdo e permanecem na mesma linha.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!-- div é um elemento block. --&gt;
+    &lt;div class="demonstracao bloco"&gt;
+      &lt;!-- h2 é um elemento block. --&gt;
+      &lt;h2&gt;Elementos Block&lt;/h2&gt;
+
+      &lt;!-- p é um elemento block. --&gt;
+      &lt;p class="bloco"&gt;
+        Este paragrafo e um elemento block. O proximo paragrafo ficara abaixo
+        dele, mesmo que ainda exista espaco na linha.
+      &lt;/p&gt;
+
+      &lt;!-- p é um elemento block. --&gt;
+      &lt;p class="bloco"&gt;
+        Este e outro elemento block, destacado em azul para facilitar a
+        visualizacao da quebra de linha.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!-- div é um elemento block. --&gt;
+    &lt;div class="demonstracao"&gt;
+      &lt;!-- h2 é um elemento block. --&gt;
+      &lt;h2&gt;Elementos Inline&lt;/h2&gt;
+
+      &lt;!-- p é um elemento block; span, strong e a são elementos inline. --&gt;
+      &lt;p&gt;
+        Aqui temos um
+        &lt;!-- span é um elemento inline. --&gt;
+        &lt;span class="inline"&gt;span inline&lt;/span&gt;, uma
+        &lt;!-- strong é um elemento inline. --&gt;
+        &lt;strong class="inline"&gt;strong inline&lt;/strong&gt; e um
+        &lt;!-- a é um elemento inline. --&gt;
+        &lt;a
+          class="inline"
+          href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+          &gt;link inline&lt;/a
+        &gt;, todos destacados em laranja e seguindo na mesma linha.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="legenda"&gt;
+      &lt;span class="bloco"&gt;Azul: elementos block&lt;/span&gt;
+      &lt;span class="inline"&gt;Laranja: elementos inline&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+  </body>
+</html>

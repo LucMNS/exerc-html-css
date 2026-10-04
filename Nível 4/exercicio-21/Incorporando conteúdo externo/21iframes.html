@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incorporando conteúdo externo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 32px 20px;
+        color: #243447;
+        background: #edf4f2;
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 28px;
+        margin-bottom: 24px;
+        color: #ffffff;
+        background: #164e63;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0 0 8px;
+      }
+
+      header p {
+        margin: 0;
+      }
+
+      .conteudo-externo {
+        padding: 24px;
+        background: #ffffff;
+        border: 2px solid #c8d8d5;
+        border-radius: 8px;
+      }
+
+      .conteudo-externo h2 {
+        margin-top: 0;
+        color: #164e63;
+      }
+
+      .mapa {
+        width: 100%;
+        height: 420px;
+        border: 0;
+        border-radius: 6px;
+      }
+
+      .observacao {
+        padding: 14px 16px;
+        margin-top: 18px;
+        background: #fff5df;
+        border-left: 5px solid #e09f3e;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 24px 14px;
+        }
+
+        .conteudo-externo {
+          padding: 18px;
+        }
+
+        .mapa {
+          height: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Incorporando conteúdo externo</h1>
+      <p>Um exemplo de uso do elemento HTML iframe.</p>
+    </header>
+
+    <main>
+      <section class="conteudo-externo">
+        <h2>Mapa incorporado</h2>
+        <p>
+          O mapa abaixo é um conteúdo externo carregado dentro desta página por
+          meio de um iframe. O elemento funciona como uma janela independente
+          para exibir outra página ou recurso.
+        </p>
+
+        <iframe
+          class="mapa"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-46.69%2C-23.57%2C-46.62%2C-23.52&amp;layer=mapnik"
+          width="800"
+          height="420"
+          title="Mapa do centro de São Paulo incorporado do OpenStreetMap"
+          loading="lazy"
+        ></iframe>
+
+        <p class="observacao">
+          O mapa é interativo e pode ser movimentado e ampliado. A largura foi
+          definida como 800 pixels e a altura como 420 pixels no iframe; o CSS
+          também permite que ele se adapte a telas menores.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

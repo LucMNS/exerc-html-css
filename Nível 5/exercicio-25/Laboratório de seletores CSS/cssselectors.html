@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Laboratório de seletores CSS</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <p class="etiqueta">CSS SELECTORS</p>
+      <h1>Laboratório de seletores CSS</h1>
+      <p>Compare como cada seletor encontra e estiliza elementos da página.</p>
+    </header>
+
+    <main class="laboratorio">
+      <section class="painel explicacao">
+        <h2>Seletores em ação</h2>
+        <ul>
+          <li>
+            <strong>Elemento:</strong> seleciona todas as tags do mesmo tipo.
+          </li>
+          <li>
+            <strong>Classe:</strong> seleciona qualquer elemento com a mesma
+            classe.
+          </li>
+          <li><strong>ID:</strong> seleciona um elemento único da página.</li>
+          <li>
+            <strong>Agrupado:</strong> aplica a mesma regra a vários seletores.
+          </li>
+          <li>
+            <strong>Descendente:</strong> seleciona elementos dentro de outro
+            elemento.
+          </li>
+        </ul>
+      </section>
+
+      <section class="painel">
+        <h2>Exemplos visuais</h2>
+        <p class="instrucao">
+          Os cartões abaixo têm estilos diferentes para mostrar o resultado de
+          cada forma de seleção.
+        </p>
+
+        <div class="cartoes">
+          <article class="cartao">
+            <h3>Seletor por elemento</h3>
+            <p>Este parágrafo recebe o estilo comum aplicado à tag p.</p>
+            <ul>
+              <li>Tag selecionada: p</li>
+              <li>Resultado: faixa verde</li>
+            </ul>
+          </article>
+
+          <article class="cartao cartao-classe">
+            <h3>Seletor por classe</h3>
+            <p>
+              Todos os elementos com a classe cartao-classe compartilham este
+              visual.
+            </p>
+            <ul>
+              <li>Classe: .cartao-classe</li>
+              <li>Resultado: borda laranja</li>
+            </ul>
+          </article>
+
+          <article class="cartao" id="cartao-especial">
+            <h3>Seletor por ID</h3>
+            <p>Este cartão é único porque possui o ID cartao-especial.</p>
+            <ul>
+              <li>ID: #cartao-especial</li>
+              <li>Resultado: destaque azul</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="painel descendente">
+        <h2>Seletor descendente</h2>
+        <p>
+          A regra <strong>.descendente li</strong> alcança somente os itens de
+          lista que estão dentro desta seção. Compare-os com os itens dos
+          cartões acima.
+        </p>
+        <ul>
+          <li>Este item está dentro de .descendente.</li>
+          <li>Por isso ele recebe fundo amarelo.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

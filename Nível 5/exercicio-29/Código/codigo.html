@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Cards e Box Model&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header class="cabecalho"&gt;
+      &lt;p class="etiqueta"&gt;CSS BOX MODEL&lt;/p&gt;
+      &lt;h1&gt;Cursos para desenvolver novas habilidades&lt;/h1&gt;
+      &lt;p&gt;Observe como bordas, margens e padding organizam cada card.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main class="lista-cards"&gt;
+      &lt;article class="card desenvolvimento"&gt;
+        &lt;span class="categoria"&gt;Programação&lt;/span&gt;
+        &lt;h2&gt;Desenvolvimento Web&lt;/h2&gt;
+        &lt;p&gt;
+          Aprenda a criar páginas interativas usando HTML, CSS e JavaScript.
+        &lt;/p&gt;
+        &lt;button type="button"&gt;Ver curso&lt;/button&gt;
+      &lt;/article&gt;
+
+      &lt;article class="card dados"&gt;
+        &lt;span class="categoria"&gt;Tecnologia&lt;/span&gt;
+        &lt;h2&gt;Análise de Dados&lt;/h2&gt;
+        &lt;p&gt;Descubra como organizar informações e transformá-las em decisões.&lt;/p&gt;
+        &lt;button type="button"&gt;Ver curso&lt;/button&gt;
+      &lt;/article&gt;
+
+      &lt;article class="card design"&gt;
+        &lt;span class="categoria"&gt;Criatividade&lt;/span&gt;
+        &lt;h2&gt;UX e UI Design&lt;/h2&gt;
+        &lt;p&gt;
+          Planeje interfaces úteis, acessíveis e agradáveis para as pessoas.
+        &lt;/p&gt;
+        &lt;button type="button"&gt;Ver curso&lt;/button&gt;
+      &lt;/article&gt;
+    &lt;/main&gt;
+
+    &lt;section class="explicacao"&gt;
+      &lt;h2&gt;Experimento com o Box Model&lt;/h2&gt;
+      &lt;p&gt;
+        Altere os valores de &lt;strong&gt;margin&lt;/strong&gt; e &lt;strong&gt;padding&lt;/strong&gt;
+        no arquivo CSS para observar o resultado: a margin afasta o card dos
+        elementos vizinhos, enquanto o padding afasta o conteúdo da borda.
+      &lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+    <h2>style.css</h2>
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #243447;
+  background: #edf4f2;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.cabecalho {
+  padding: 32px 24px;
+  margin-bottom: 34px;
+  color: #ffffff;
+  background: #164e63;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 8px 0;
+  font-size: 2.2rem;
+}
+
+.cabecalho p {
+  margin: 0;
+}
+
+.etiqueta {
+  color: #f4c95d;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+.lista-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+/* A margin cria espaço externo entre um card e os elementos ao redor. */
+.card {
+  min-height: 320px;
+  padding: 28px;
+  margin: 12px;
+  background: #ffffff;
+  border: 4px solid #287271;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgb(22 78 99 / 12%);
+}
+
+/* O padding cria espaço interno entre o conteúdo e a borda do card. */
+.card h2 {
+  margin: 12px 0;
+  color: #164e63;
+  font-size: 1.35rem;
+}
+
+.card p {
+  min-height: 78px;
+  margin: 0 0 22px;
+}
+
+.categoria {
+  padding: 5px 9px;
+  color: #ffffff;
+  background: #287271;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.dados {
+  border-color: #e09f3e;
+}
+
+.dados .categoria {
+  background: #d89000;
+}
+
+.design {
+  border-color: #9b5de5;
+}
+
+.design .categoria {
+  background: #7b2cbf;
+}
+
+button {
+  padding: 10px 16px;
+  color: #ffffff;
+  background: #164e63;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #287271;
+}
+
+.explicacao {
+  padding: 24px;
+  margin: 34px 12px 12px;
+  background: #fff5df;
+  border-left: 6px solid #f4c95d;
+  border-radius: 6px;
+}
+
+.explicacao h2 {
+  margin-top: 0;
+  color: #8a5700;
+}
+
+@media (max-width: 800px) {
+  .lista-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  .cabecalho {
+    padding: 26px 18px;
+  }
+
+  .cabecalho h1 {
+    font-size: 1.8rem;
+  }
+}
+
+  </code></pre>
+  </body>
+</html>

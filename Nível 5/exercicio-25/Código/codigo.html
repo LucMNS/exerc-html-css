@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Laboratório de seletores CSS&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header class="cabecalho"&gt;
+      &lt;p class="etiqueta"&gt;CSS SELECTORS&lt;/p&gt;
+      &lt;h1&gt;Laboratório de seletores CSS&lt;/h1&gt;
+      &lt;p&gt;Compare como cada seletor encontra e estiliza elementos da página.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main class="laboratorio"&gt;
+      &lt;section class="painel explicacao"&gt;
+        &lt;h2&gt;Seletores em ação&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;strong&gt;Elemento:&lt;/strong&gt; seleciona todas as tags do mesmo tipo.
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;strong&gt;Classe:&lt;/strong&gt; seleciona qualquer elemento com a mesma
+            classe.
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;ID:&lt;/strong&gt; seleciona um elemento único da página.&lt;/li&gt;
+          &lt;li&gt;
+            &lt;strong&gt;Agrupado:&lt;/strong&gt; aplica a mesma regra a vários seletores.
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;strong&gt;Descendente:&lt;/strong&gt; seleciona elementos dentro de outro
+            elemento.
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/section&gt;
+
+      &lt;section class="painel"&gt;
+        &lt;h2&gt;Exemplos visuais&lt;/h2&gt;
+        &lt;p class="instrucao"&gt;
+          Os cartões abaixo têm estilos diferentes para mostrar o resultado de
+          cada forma de seleção.
+        &lt;/p&gt;
+
+        &lt;div class="cartoes"&gt;
+          &lt;article class="cartao"&gt;
+            &lt;h3&gt;Seletor por elemento&lt;/h3&gt;
+            &lt;p&gt;Este parágrafo recebe o estilo comum aplicado à tag p.&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Tag selecionada: p&lt;/li&gt;
+              &lt;li&gt;Resultado: faixa verde&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/article&gt;
+
+          &lt;article class="cartao cartao-classe"&gt;
+            &lt;h3&gt;Seletor por classe&lt;/h3&gt;
+            &lt;p&gt;
+              Todos os elementos com a classe cartao-classe compartilham este
+              visual.
+            &lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Classe: .cartao-classe&lt;/li&gt;
+              &lt;li&gt;Resultado: borda laranja&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/article&gt;
+
+          &lt;article class="cartao" id="cartao-especial"&gt;
+            &lt;h3&gt;Seletor por ID&lt;/h3&gt;
+            &lt;p&gt;Este cartão é único porque possui o ID cartao-especial.&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;ID: #cartao-especial&lt;/li&gt;
+              &lt;li&gt;Resultado: destaque azul&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class="painel descendente"&gt;
+        &lt;h2&gt;Seletor descendente&lt;/h2&gt;
+        &lt;p&gt;
+          A regra &lt;strong&gt;.descendente li&lt;/strong&gt; alcança somente os itens de
+          lista que estão dentro desta seção. Compare-os com os itens dos
+          cartões acima.
+        &lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Este item está dentro de .descendente.&lt;/li&gt;
+          &lt;li&gt;Por isso ele recebe fundo amarelo.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+    <h2>style.css</h2>
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #243447;
+  background: #edf4f2;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.cabecalho {
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  background: #164e63;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+}
+
+.cabecalho p {
+  margin: 0;
+}
+
+.etiqueta {
+  color: #f4c95d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+.laboratorio {
+  display: grid;
+  gap: 20px;
+}
+
+.painel {
+  padding: 24px;
+  background: #ffffff;
+  border: 2px solid #c8d8d5;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(22 78 99 / 10%);
+}
+
+/* Seletor agrupado: h2 e h3 recebem a mesma cor. */
+.painel h2,
+.cartao h3 {
+  color: #287271;
+}
+
+.painel h2 {
+  margin-top: 0;
+}
+
+.explicacao {
+  background: #f8fbfa;
+}
+
+.explicacao li {
+  margin-bottom: 8px;
+}
+
+.instrucao {
+  margin-bottom: 20px;
+}
+
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Seletor por classe: todos os cartões compartilham esta base. */
+.cartao {
+  padding: 18px;
+  background: #f5f9f8;
+  border: 3px solid #81b29a;
+  border-radius: 6px;
+}
+
+.cartao h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+/* Seletor descendente: apenas os parágrafos dentro de cartões mudam. */
+.cartao p {
+  padding: 10px;
+  background: #ffffff;
+  border-left: 4px solid #81b29a;
+}
+
+/* Outra classe cria uma aparência diferente para esta categoria. */
+.cartao-classe {
+  background: #fff5df;
+  border-color: #e09f3e;
+}
+
+.cartao-classe h3 {
+  color: #b26e00;
+}
+
+/* Seletor por ID: aplica um destaque único ao cartão especial. */
+#cartao-especial {
+  background: #e8f0ff;
+  border-color: #3478c8;
+}
+
+#cartao-especial h3 {
+  color: #205493;
+}
+
+.descendente {
+  border-left: 8px solid #f4c95d;
+}
+
+/* Este seletor alcança somente li que descendem desta seção. */
+.descendente li {
+  width: fit-content;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  background: #fff5df;
+}
+
+@media (max-width: 800px) {
+  .cartoes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  .cabecalho,
+  .painel {
+    padding: 22px 18px;
+  }
+
+  .cabecalho h1 {
+    font-size: 1.8rem;
+  }
+}
+
+  </code></pre>
+  </body>
+</html>

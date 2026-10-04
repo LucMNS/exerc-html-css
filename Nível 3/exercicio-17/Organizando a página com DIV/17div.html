@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Organizando com DIVs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 15px;
+        background-color: #f4f4f9;
+      }
+
+      .cabecalho {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .menu {
+        background-color: #3498db;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+      }
+
+      .rodape {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 15px;
+      }
+
+      .conteudo {
+        display: flex;
+        gap: 15px;
+      }
+
+      .coluna {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cabecalho">
+      <h1>Portal de Tecnologia</h1>
+    </div>
+
+    <div class="menu">
+      <a href="#">Início</a>
+      <a href="#">Artigos</a>
+      <a href="#">Tutoriais</a>
+      <a href="#">Contato</a>
+    </div>
+
+    <div class="conteudo">
+      <div class="coluna">
+        <h2>A importância das DIVs</h2>
+        <p>
+          A tag <code>&lt;div&gt;</code> é um container genérico. Ela não tem um
+          significado visual por si só, mas quando combinada com classes e CSS,
+          torna-se a principal ferramenta para construir o layout de um site,
+          separando o topo, meio e fim da página.
+        </p>
+      </div>
+
+      <div class="coluna">
+        <h2>Artigos Recentes</h2>
+        <ul>
+          <li>Entendendo o Box Model</li>
+          <li>Como usar classes e IDs</li>
+          <li>Display Flex vs Display Block</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <p>&copy; 2026 Portal de Tecnologia. Exercício 17 concluído.</p>
+    </div>
+  </body>
+</html>

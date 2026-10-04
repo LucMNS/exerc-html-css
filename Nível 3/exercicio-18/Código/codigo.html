@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Classes Reutilizáveis&lt;/title&gt;
+    &lt;style&gt;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #ffffff;
+        width: 280px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        font-size: 1.3em;
+      }
+
+      .frontend h3 {
+        color: #e67e22;
+      }
+      .backend h3 {
+        color: #8e44ad;
+      }
+      .dados h3 {
+        color: #16a085;
+      }
+
+      .online {
+        border-top: 6px solid #3498db;
+      }
+      .online::after {
+        content: "Formato: EAD / Online";
+        display: block;
+        margin-top: 15px;
+        font-size: 0.85em;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      .presencial {
+        border-top: 6px solid #2ecc71;
+      }
+      .presencial::after {
+        content: "Formato: Presencial";
+        display: block;
+        margin-top: 15px;
+        font-size: 0.85em;
+        color: #2ecc71;
+        font-weight: bold;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="card online backend"&gt;
+      &lt;h3&gt;Python para Sistemas&lt;/h3&gt;
+      &lt;p&gt;
+        Aprenda a construir lógicas de servidor e automações complexas
+        utilizando Python e frameworks modernos.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card presencial frontend"&gt;
+      &lt;h3&gt;Desenvolvimento com React e JS&lt;/h3&gt;
+      &lt;p&gt;
+        Domine a criação de interfaces dinâmicas, Progressive Web Apps (PWAs) e
+        componentes utilizando JavaScript e React.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card online dados"&gt;
+      &lt;h3&gt;Modelagem de Dados com SQL&lt;/h3&gt;
+      &lt;p&gt;
+        Aprenda a estruturar, consultar e proteger bancos de dados relacionais
+        eficientes para aplicações SaaS.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card presencial backend"&gt;
+      &lt;h3&gt;Programação C++ Avançada&lt;/h3&gt;
+      &lt;p&gt;
+        Aprofunde-se no desenvolvimento de software de alta performance,
+        manipulação de memória e orientação a objetos em C++.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card online frontend"&gt;
+      &lt;h3&gt;Interfaces de Alta Conversão&lt;/h3&gt;
+      &lt;p&gt;
+        Técnicas avançadas de HTML, CSS e UI/UX para garantir a melhor
+        experiência do usuário na internet.
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card presencial backend"&gt;
+      &lt;h3&gt;Análise e Desenvolvimento&lt;/h3&gt;
+      &lt;p&gt;
+        Práticas ágeis, levantamento de requisitos e arquitetura de software
+        para transformar ideias em sistemas completos.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+  </body>
+</html>

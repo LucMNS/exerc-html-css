@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style-corrigido.css" /&gt;
+    &lt;title&gt;Caça aos erros de CSS&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main class="pagina"&gt;
+      &lt;header&gt;
+        &lt;p class="etiqueta"&gt;CSS ERRORS&lt;/p&gt;
+        &lt;h1&gt;Caça aos erros de CSS&lt;/h1&gt;
+        &lt;p&gt;Uma página para praticar a identificação de erros de sintaxe.&lt;/p&gt;
+      &lt;/header&gt;
+
+      &lt;section class="cartao desafio"&gt;
+        &lt;h2&gt;Desafio&lt;/h2&gt;
+        &lt;p&gt;
+          Antes de abrir a solução, peça a um colega para analisar o arquivo
+          &lt;strong&gt;style-com-erros.css&lt;/strong&gt; e encontrar os problemas.
+        &lt;/p&gt;
+        &lt;p class="aviso"&gt;
+          Dica: procure ponto e vírgula, chaves, propriedades, seletores e
+          valores inválidos.
+        &lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class="cartao exemplo"&gt;
+        &lt;h2&gt;Versão corrigida&lt;/h2&gt;
+        &lt;p&gt;
+          Esta página está usando &lt;strong&gt;style-corrigido.css&lt;/strong&gt;. Compare
+          este resultado com o arquivo que contém os erros e observe os
+          comentários que explicam cada correção.
+        &lt;/p&gt;
+        &lt;div class="amostra"&gt;CSS corrigido e funcionando.&lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+    <h2>style-com-erros.css</h2>
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 20px;
+  color: #243447
+  background-color: #edf4f2;
+  font-family: Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.pagina {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+header {
+  padding: 24px;
+  color: #ffffff;
+  background-color: #164e63;
+  text-align: center;
+}
+
+.etiqueta {
+  font-size: grande;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  color: #287271;
+}
+
+h1 {
+  margin: 0 0 8px;
+
+.cartao] {
+  padding: 20px;
+  border: 2px solid #c8d8d5
+}
+
+.desafio {
+  background-colour: #fff5df;
+}
+
+.aviso {
+  padding: 12px;
+  background-color: #f4c95d;
+  border-left: 5px solid #b26e00;
+}
+
+.exemplo {
+  backgroun-color: #e8f5f2;
+}
+
+.amostra {
+  padding: 14px;
+  color: #ffffff;
+  background-color: #287271;
+  text-align: centar;
+}
+
+  </code></pre>
+    <h2>style-corrigido.css</h2>
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 20px;
+  color: #243447;
+  background-color: #edf4f2;
+  font-family: Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.pagina {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+header {
+  padding: 24px;
+  color: #ffffff;
+  background-color: #164e63;
+  text-align: center;
+}
+
+.etiqueta {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  color: #287271;
+}
+
+h1 {
+  margin: 0 0 8px;
+}
+
+.cartao {
+  padding: 20px;
+  border: 2px solid #c8d8d5;
+}
+
+.desafio {
+  background-color: #fff5df;
+}
+
+.aviso {
+  padding: 12px;
+  background-color: #f4c95d;
+  border-left: 5px solid #b26e00;
+}
+
+.exemplo {
+  background-color: #e8f5f2;
+}
+
+.amostra {
+  padding: 14px;
+  color: #ffffff;
+  background-color: #287271;
+  text-align: center;
+}
+
+/* Correção 1: foi adicionado o ponto e vírgula após color: #243447. */
+/* Correção 2: font-size recebeu um valor numérico com unidade válida. */
+/* Correção 3: a chave que fechava h1 foi adicionada antes do próximo seletor. */
+/* Correção 4: o seletor .cartao] foi corrigido para .cartao. */
+/* Correção 5: background-colour foi corrigido para background-color. */
+/* Correção 6: backgroun-color foi corrigido para background-color. */
+/* Correção 7: centar foi corrigido para o valor válido center. */
+/* Correção 8: foi adicionado o ponto e vírgula ao final da propriedade border. */
+
+
+  </code></pre>
+  </body>
+</html>

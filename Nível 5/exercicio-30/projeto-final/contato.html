@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Entre em contato com a TechOsasco para solicitar um orçamento."
+    />
+    <title>TechOsasco - Contato</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="cabecalho-principal">
+      <h1>TechOsasco Soluções</h1>
+      <nav>
+        <a href="index.html" class="menu-link">Início</a> |
+        <a href="sobre.html" class="menu-link">Sobre a Empresa</a> |
+        <a href="contato.html" class="menu-link">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Fale com nossos especialistas</h2>
+      <p>
+        Verifique nosso horário de atendimento abaixo e solicite o seu orçamento
+        sem compromisso!
+      </p>
+
+      <!-- Tabela organizada (Requisito) -->
+      <table class="tabela-horarios">
+        <tr>
+          <th>Dias da Semana</th>
+          <th>Setor</th>
+          <th>Horário de Atendimento</th>
+        </tr>
+        <tr>
+          <td>Segunda a Sexta</td>
+          <td>Comercial e Suporte</td>
+          <td>08:00 - 18:00</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>Apenas Suporte Técnico</td>
+          <td>09:00 - 13:00</td>
+        </tr>
+      </table>
+
+      <br />
+      <!-- Desafio com JavaScript: Interação simples no botão -->
+      <button id="btn-orcamento" onclick="solicitarOrcamento()">
+        Solicitar Orçamento
+      </button>
+      <p id="mensagem-retorno"></p>
+
+      <!-- Script interno contendo a lógica de interação -->
+      <script>
+        /* 
+              Função em JS que localiza o parágrafo vazio acima pelo ID 
+              e injeta um texto de confirmação quando o botão é clicado.
+            */
+        function solicitarOrcamento() {
+          var elementoMensagem = document.getElementById("mensagem-retorno");
+          elementoMensagem.innerHTML =
+            "Sua solicitação foi registrada! Um de nossos desenvolvedores entrará em contato.";
+          elementoMensagem.style.color = "#0056b3"; // Muda a cor do texto
+          elementoMensagem.style.fontWeight = "bold";
+        }
+      </script>
+    </main>
+
+    <footer>
+      <p><small>&copy; 2026 TechOsasco Soluções em TI.</small></p>
+    </footer>
+  </body>
+</html>

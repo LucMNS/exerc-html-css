@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Página com botões&lt;/title&gt;
+    &lt;style&gt;
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 20px;
+        color: #243447;
+        background: #edf4f2;
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 28px;
+        margin-bottom: 24px;
+        color: #ffffff;
+        background: #164e63;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0 0 8px;
+      }
+
+      header p {
+        margin: 0;
+      }
+
+      .acoes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+      }
+
+      .acao {
+        padding: 22px;
+        background: #ffffff;
+        border: 2px solid #c8d8d5;
+        border-radius: 8px;
+      }
+
+      .acao h2 {
+        margin: 0 0 8px;
+        color: #164e63;
+        font-size: 1.2rem;
+      }
+
+      .acao p {
+        min-height: 52px;
+        margin: 0 0 18px;
+      }
+
+      button {
+        padding: 10px 16px;
+        color: #ffffff;
+        background: #287271;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        font: inherit;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background: #1d5554;
+      }
+
+      .editar button {
+        background: #d89000;
+      }
+
+      .excluir button {
+        background: #b23a48;
+      }
+
+      .voltar button {
+        color: #243447;
+        background: #d9e8e5;
+      }
+
+      #mensagem {
+        min-height: 28px;
+        margin-top: 24px;
+        color: #1d5554;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 24px 14px;
+        }
+
+        .acoes {
+          grid-template-columns: 1fr;
+        }
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Ações disponíveis&lt;/h1&gt;
+      &lt;p&gt;
+        Conheça algumas ações que podem ser realizadas com o elemento button.
+      &lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main class="acoes"&gt;
+      &lt;section class="acao cadastrar"&gt;
+        &lt;h2&gt;Cadastrar&lt;/h2&gt;
+        &lt;p&gt;Use este botão para adicionar um novo cadastro ao sistema.&lt;/p&gt;
+        &lt;button type="button" id="botao-cadastrar"&gt;Cadastrar&lt;/button&gt;
+      &lt;/section&gt;
+
+      &lt;section class="acao editar"&gt;
+        &lt;h2&gt;Editar&lt;/h2&gt;
+        &lt;p&gt;Use este botão para alterar os dados de um cadastro existente.&lt;/p&gt;
+        &lt;button type="button"&gt;Editar&lt;/button&gt;
+      &lt;/section&gt;
+
+      &lt;section class="acao excluir"&gt;
+        &lt;h2&gt;Excluir&lt;/h2&gt;
+        &lt;p&gt;
+          Use este botão para remover um cadastro que não é mais necessário.
+        &lt;/p&gt;
+        &lt;button type="button"&gt;Excluir&lt;/button&gt;
+      &lt;/section&gt;
+
+      &lt;section class="acao voltar"&gt;
+        &lt;h2&gt;Voltar&lt;/h2&gt;
+        &lt;p&gt;Use este botão para retornar à página ou à etapa anterior.&lt;/p&gt;
+        &lt;button type="button"&gt;Voltar&lt;/button&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;p id="mensagem" aria-live="polite"&gt;&lt;/p&gt;
+
+    &lt;script&gt;
+      const botaoCadastrar = document.querySelector("#botao-cadastrar");
+      const mensagem = document.querySelector("#mensagem");
+
+      botaoCadastrar.addEventListener("click", () =&gt; {
+        mensagem.textContent = "Cadastro realizado com sucesso!";
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+  </body>
+</html>

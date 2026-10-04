@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Construindo fundos com CSS&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;section class="capa"&gt;
+        &lt;div class="capa-conteudo"&gt;
+          &lt;p class="etiqueta"&gt;CSS BACKGROUNDS&lt;/p&gt;
+          &lt;h1&gt;Construindo fundos com CSS&lt;/h1&gt;
+          &lt;p&gt;
+            Fundos bem planejados criam atmosfera, organizam a página e ajudam a
+            destacar seu conteúdo.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class="secao cor-solida"&gt;
+        &lt;h2&gt;Background-color&lt;/h2&gt;
+        &lt;p&gt;
+          Esta seção utiliza uma cor de fundo sólida. Ela cria uma base limpa e
+          mantém o texto com alto contraste para facilitar a leitura.
+        &lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class="secao imagem-fundo"&gt;
+        &lt;div class="conteudo-sobreposto"&gt;
+          &lt;h2&gt;Background-image&lt;/h2&gt;
+          &lt;p&gt;
+            Aqui uma imagem de montanhas é usada como fundo. A sobreposição
+            escura e o texto claro garantem que o conteúdo continue legível.
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class="secao padrao-fundo"&gt;
+        &lt;h2&gt;Posicionamento e repetição&lt;/h2&gt;
+        &lt;p&gt;
+          Este fundo usa um padrão de pontos repetido com
+          &lt;strong&gt;background-repeat&lt;/strong&gt; e deslocado com
+          &lt;strong&gt;background-position&lt;/strong&gt;. O padrão é decorativo e não
+          interfere na leitura do texto.
+        &lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+    <h2>style.css</h2>
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #243447;
+  background-color: #edf4f2;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  max-width: 1100px;
+  padding: 24px 20px 40px;
+  margin: 0 auto;
+}
+
+.capa,
+.secao {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.capa {
+  display: flex;
+  min-height: 420px;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 28px;
+  color: #ffffff;
+  background-color: #164e63;
+  background-image:
+    linear-gradient(rgb(9 35 48 / 58%), rgb(9 35 48 / 72%)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format
+    &fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.capa-conteudo {
+  max-width: 650px;
+}
+
+.capa h1 {
+  margin: 8px 0 14px;
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  line-height: 1.1;
+}
+
+.capa p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.etiqueta {
+  color: #f4c95d;
+  font-size: 0.85rem !important;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+}
+
+.secao {
+  min-height: 270px;
+  padding: 36px;
+}
+
+.secao h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.secao p {
+  max-width: 680px;
+  margin-bottom: 0;
+}
+
+.cor-solida {
+  color: #ffffff;
+  background-color: #287271;
+}
+
+.imagem-fundo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #174a6e;
+  background-image:
+    linear-gradient(90deg, rgb(11 37 54 / 82%), rgb(11 37 54 / 25%)),
+    url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format
+    &fit=crop&w=1400&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.conteudo-sobreposto {
+  max-width: 600px;
+}
+
+.padrao-fundo {
+  background-color: #fff5df;
+  background-image: radial-gradient(#e09f3e 1.5px, transparent 1.5px);
+  background-position: 12px 12px;
+  background-repeat: repeat;
+  background-size: 24px 24px;
+}
+
+.padrao-fundo h2 {
+  color: #8a5700;
+}
+
+.padrao-fundo p {
+  padding: 16px;
+  background-color: rgb(255 255 255 / 90%);
+  border-left: 5px solid #e09f3e;
+}
+
+@media (max-width: 560px) {
+  main {
+    padding: 14px 14px 28px;
+  }
+
+  .capa {
+    min-height: 360px;
+    padding: 32px 20px;
+  }
+
+  .secao {
+    min-height: 240px;
+    padding: 28px 22px;
+  }
+}
+
+
+  </code></pre>
+  </body>
+</html>

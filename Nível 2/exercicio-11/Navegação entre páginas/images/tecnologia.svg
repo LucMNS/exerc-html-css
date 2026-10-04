@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
+  <title id="title">Tela com código</title>
+  <desc id="desc">Ilustração de uma tela de computador com linhas de código.</desc>
+  <rect width="320" height="180" fill="#123047" />
+  <rect x="35" y="30" width="250" height="120" rx="8" fill="#eef4f7" />
+  <circle cx="52" cy="44" r="5" fill="#e76f51" />
+  <circle cx="68" cy="44" r="5" fill="#f4a261" />
+  <circle cx="84" cy="44" r="5" fill="#2a9d8f" />
+  <path d="M65 75l18 15-18 15M100 110h42M100 90h82M100 70h125" fill="none" stroke="#287d8b" stroke-width="6" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Identificando elementos com ID&lt;/title&gt;
+    &lt;style&gt;
+      :root {
+        --azul: #164e63;
+        --verde: #287271;
+        --amarelo: #f4c95d;
+        --fundo: #eef3f8;
+        --texto: #1f2937;
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--texto);
+        background: var(--fundo);
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      .topo {
+        padding: 32px 20px;
+        color: #ffffff;
+        background: var(--azul);
+        text-align: center;
+      }
+
+      .topo h1 {
+        margin: 0 0 8px;
+      }
+
+      .topo p {
+        margin: 0;
+      }
+
+      .menu {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 14px 20px;
+        background: #ffffff;
+        border-bottom: 3px solid var(--amarelo);
+      }
+
+      .menu a,
+      .voltar {
+        padding: 7px 12px;
+        color: var(--azul);
+        border-radius: 4px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .menu a:hover,
+      .voltar:hover {
+        color: #ffffff;
+        background: var(--verde);
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px 20px 40px;
+      }
+
+      .secao {
+        min-height: 430px;
+        padding: 32px;
+        margin-bottom: 24px;
+        background: #ffffff;
+        border-left: 8px solid var(--verde);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgb(22 78 99 / 10%);
+      }
+
+      .secao:nth-child(even) {
+        border-left-color: #e09f3e;
+      }
+
+      .secao h2 {
+        margin-top: 0;
+        color: var(--azul);
+      }
+
+      .secao p {
+        max-width: 680px;
+      }
+
+      .voltar {
+        display: inline-block;
+        margin-top: 24px;
+        background: var(--amarelo);
+      }
+
+      @media (max-width: 560px) {
+        .secao {
+          min-height: 380px;
+          padding: 24px;
+        }
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body id="topo"&gt;
+    &lt;header class="topo"&gt;
+      &lt;h1&gt;Minha jornada na tecnologia&lt;/h1&gt;
+      &lt;p&gt;Use o menu para navegar entre as quatro seções desta página.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;nav class="menu" aria-label="Menu principal"&gt;
+      &lt;a href="#sobre"&gt;Sobre&lt;/a&gt;
+      &lt;a href="#habilidades"&gt;Habilidades&lt;/a&gt;
+      &lt;a href="#projetos"&gt;Projetos&lt;/a&gt;
+      &lt;a href="#contato"&gt;Contato&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+      &lt;section class="secao" id="sobre"&gt;
+        &lt;h2&gt;Sobre mim&lt;/h2&gt;
+        &lt;p&gt;
+          Estou aprendendo desenvolvimento web e conhecendo as possibilidades de
+          criar interfaces usando HTML e CSS.
+        &lt;/p&gt;
+        &lt;p&gt;
+          O atributo &lt;strong&gt;id&lt;/strong&gt; identifica um elemento de forma única
+          dentro da página, permitindo que um link encontre exatamente esta
+          seção.
+        &lt;/p&gt;
+        &lt;a class="voltar" href="#topo"&gt;Voltar ao topo&lt;/a&gt;
+      &lt;/section&gt;
+
+      &lt;section class="secao" id="habilidades"&gt;
+        &lt;h2&gt;Habilidades&lt;/h2&gt;
+        &lt;p&gt;Estas são algumas habilidades que estou desenvolvendo:&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Estruturação de páginas com HTML.&lt;/li&gt;
+          &lt;li&gt;Estilização e organização visual com CSS.&lt;/li&gt;
+          &lt;li&gt;Criação de layouts responsivos.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;a class="voltar" href="#topo"&gt;Voltar ao topo&lt;/a&gt;
+      &lt;/section&gt;
+
+      &lt;section class="secao" id="projetos"&gt;
+        &lt;h2&gt;Projetos&lt;/h2&gt;
+        &lt;p&gt;
+          Já pratiquei páginas com textos, imagens, links, listas e cartões de
+          cursos. Cada exercício ajuda a construir uma base mais sólida.
+        &lt;/p&gt;
+        &lt;p&gt;
+          Com IDs diferentes, cada projeto também poderia ser acessado por um
+          link específico, sem precisar procurar manualmente na página.
+        &lt;/p&gt;
+        &lt;a class="voltar" href="#topo"&gt;Voltar ao topo&lt;/a&gt;
+      &lt;/section&gt;
+
+      &lt;section class="secao" id="contato"&gt;
+        &lt;h2&gt;Contato&lt;/h2&gt;
+        &lt;p&gt;
+          Para entrar em contato, envie uma mensagem pelo formulário ou visite
+          meu perfil profissional.
+        &lt;/p&gt;
+        &lt;p&gt;Obrigado por conhecer minha jornada de aprendizagem!&lt;/p&gt;
+        &lt;a class="voltar" href="#topo"&gt;Voltar ao topo&lt;/a&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+  </body>
+</html>

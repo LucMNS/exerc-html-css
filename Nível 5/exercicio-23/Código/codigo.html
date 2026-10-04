@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Minha primeira estilização com CSS&lt;/title&gt;
+    &lt;style&gt;
+      .exemplo-interno {
+        border-top: 4px solid #f4c95d;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header class="cabecalho"&gt;
+      &lt;h1&gt;Minha primeira estilização com CSS&lt;/h1&gt;
+      &lt;p&gt;HTML organiza o conteúdo e CSS transforma sua aparência.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main class="conteudo"&gt;
+      &lt;section class="cartao exemplo-interno"&gt;
+        &lt;h2&gt;Conteúdo da página&lt;/h2&gt;
+        &lt;p&gt;
+          Esta página foi criada com HTML e estilizada usando um arquivo CSS
+          externo. A cor do texto, o fundo, o tamanho da fonte e o alinhamento
+          foram definidos no arquivo &lt;strong&gt;style.css&lt;/strong&gt;.
+        &lt;/p&gt;
+        &lt;p class="destaque"&gt;
+          Este parágrafo também recebeu estilo do CSS externo e mostra como uma
+          classe pode ser reutilizada.
+        &lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section class="cartao explicacao"&gt;
+        &lt;h2&gt;Três formas de usar CSS&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;strong&gt;CSS externo:&lt;/strong&gt; fica em um arquivo separado, como o
+            &lt;strong&gt;style.css&lt;/strong&gt;, e pode ser usado em várias páginas.
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;strong&gt;CSS interno:&lt;/strong&gt; fica dentro da tag
+            &lt;strong&gt;&lt;style&gt;&lt;/strong&gt; no próprio HTML e vale para aquela
+            página.
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;strong&gt;CSS inline:&lt;/strong&gt; fica no atributo
+            &lt;strong&gt;style&lt;/strong&gt; do elemento e altera somente aquele item.
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style="color: #b23a48; font-weight: bold; text-align: center"&gt;
+          Este texto é um exemplo de CSS inline.
+        &lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer class="rodape"&gt;
+      &lt;p&gt;Exercício de introdução ao CSS&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+    <h2>style.css</h2>
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #243447;
+  background: #edf4f2;
+  font-family: Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.cabecalho {
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  background: #164e63;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.cabecalho p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+.cartao {
+  padding: 24px;
+  background: #ffffff;
+  border: 2px solid #c8d8d5;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(22 78 99 / 10%);
+}
+
+.cartao h2 {
+  margin-top: 0;
+  color: #287271;
+}
+
+.cartao p {
+  margin-bottom: 16px;
+}
+
+.destaque {
+  padding: 14px;
+  color: #164e63;
+  background: #e8f5f2;
+  border-left: 5px solid #287271;
+}
+
+.explicacao {
+  background: #fffdf7;
+}
+
+.explicacao li {
+  margin-bottom: 12px;
+}
+
+.rodape {
+  padding: 20px;
+  margin-top: 24px;
+  color: #ffffff;
+  background: #3d405b;
+  text-align: center;
+}
+
+.rodape p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 24px 14px;
+    font-size: 16px;
+  }
+
+  .cabecalho,
+  .cartao {
+    padding: 22px 18px;
+  }
+}
+  </code></pre>
+  </body>
+</html>

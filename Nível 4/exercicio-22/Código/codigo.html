@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Primeiro contato com JavaScript&lt;/title&gt;
+    &lt;style&gt;
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        margin: 0;
+        padding: 24px;
+        color: #243447;
+        background: #edf4f2;
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+        transition: background-color 0.3s ease;
+      }
+
+      .painel {
+        width: min(100%, 620px);
+        padding: 36px;
+        background: #ffffff;
+        border-top: 8px solid #287271;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgb(22 78 99 / 14%);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        color: #164e63;
+      }
+
+      .descricao {
+        margin: 0 0 24px;
+      }
+
+      .mensagem {
+        min-height: 56px;
+        padding: 14px;
+        margin-bottom: 24px;
+        color: #164e63;
+        background: #e8f5f2;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .botoes {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      button {
+        padding: 11px 18px;
+        color: #ffffff;
+        background: #287271;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        font: inherit;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background: #1d5554;
+      }
+
+      #botao-texto {
+        color: #243447;
+        background: #f4c95d;
+      }
+
+      #botao-texto:hover {
+        background: #e6b83e;
+      }
+
+      @media (max-width: 500px) {
+        .painel {
+          padding: 28px 20px;
+        }
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main class="painel"&gt;
+      &lt;h1&gt;Meu primeiro JavaScript&lt;/h1&gt;
+      &lt;p class="descricao"&gt;
+        Clique nos botões para ver o HTML e o JavaScript trabalhando juntos.
+      &lt;/p&gt;
+
+      &lt;p class="mensagem" id="mensagem"&gt;A mensagem aparecerá aqui.&lt;/p&gt;
+
+      &lt;div class="botoes"&gt;
+        &lt;button type="button" id="botao-clique"&gt;Clique aqui&lt;/button&gt;
+        &lt;button type="button" id="botao-texto"&gt;Mudar texto novamente&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;script&gt;
+      const mensagem = document.querySelector("#mensagem");
+      const botaoClique = document.querySelector("#botao-clique");
+      const botaoTexto = document.querySelector("#botao-texto");
+
+      // O JavaScript reage ao clique e altera elementos da página.
+      botaoClique.addEventListener("click", () =&gt; {
+        mensagem.textContent = "Você clicou no botão! A página mudou.";
+        document.body.style.backgroundColor = "#d8e9ff";
+      });
+
+      botaoTexto.addEventListener("click", () =&gt; {
+        mensagem.textContent = "O segundo botão alterou o texto novamente!";
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+  </body>
+</html>

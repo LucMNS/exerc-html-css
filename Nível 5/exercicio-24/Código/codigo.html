@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;Praticando a sintaxe do CSS&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main class="pagina"&gt;
+      &lt;h1&gt;Praticando a sintaxe do CSS&lt;/h1&gt;
+      &lt;h2&gt;Como uma regra CSS transforma a página&lt;/h2&gt;
+
+      &lt;p&gt;
+        O CSS permite alterar a aparência de elementos HTML por meio de regras
+        organizadas e fáceis de reutilizar.
+      &lt;/p&gt;
+      &lt;p&gt;
+        Cada regra possui um seletor, uma propriedade e um valor. Juntos, eles
+        informam ao navegador qual elemento deve ser estilizado e como.
+      &lt;/p&gt;
+      &lt;p class="destaque"&gt;
+        Observe as cores, os tamanhos, os espaços e o alinhamento aplicados a
+        este exercício pelo arquivo CSS.
+      &lt;/p&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+    <h2>style.css</h2>
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+/* Sintaxe: seletor { propriedade: valor; }
+	 O seletor escolhe o elemento, a propriedade indica o que mudar e o valor
+	 define como essa mudança será aplicada. */
+
+/* Esta regra define a aparência geral da página. */
+body {
+  margin: 0;
+  padding: 32px 20px;
+  color: #243447;
+  background-color: #edf4f2;
+  font-family: Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Esta regra limita a largura e centraliza o conteúdo. */
+.pagina {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 36px;
+  background-color: #ffffff;
+  border-top: 8px solid #287271;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgb(22 78 99 / 12%);
+}
+
+/* O título recebe cor, tamanho e alinhamento próprios. */
+h1 {
+  margin: 0 0 12px;
+  color: #164e63;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+/* O subtítulo usa outra cor para criar uma hierarquia visual. */
+h2 {
+  margin: 0 0 24px;
+  color: #b26e00;
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+p {
+  padding: 16px;
+  margin: 0 0 16px;
+  background-color: #f5f9f8;
+  border-left: 4px solid #81b29a;
+}
+
+.destaque {
+  color: #164e63;
+  background-color: #fff5df;
+  border-left-color: #f4c95d;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 24px 14px;
+    font-size: 16px;
+  }
+
+  .pagina {
+    padding: 24px 18px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+  </code></pre>
+  </body>
+</html>

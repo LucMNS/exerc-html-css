@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Minha primeira estilização com CSS</title>
+    <style>
+      .exemplo-interno {
+        border-top: 4px solid #f4c95d;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>Minha primeira estilização com CSS</h1>
+      <p>HTML organiza o conteúdo e CSS transforma sua aparência.</p>
+    </header>
+
+    <main class="conteudo">
+      <section class="cartao exemplo-interno">
+        <h2>Conteúdo da página</h2>
+        <p>
+          Esta página foi criada com HTML e estilizada usando um arquivo CSS
+          externo. A cor do texto, o fundo, o tamanho da fonte e o alinhamento
+          foram definidos no arquivo <strong>style.css</strong>.
+        </p>
+        <p class="destaque">
+          Este parágrafo também recebeu estilo do CSS externo e mostra como uma
+          classe pode ser reutilizada.
+        </p>
+      </section>
+
+      <section class="cartao explicacao">
+        <h2>Três formas de usar CSS</h2>
+        <ul>
+          <li>
+            <strong>CSS externo:</strong> fica em um arquivo separado, como o
+            <strong>style.css</strong>, e pode ser usado em várias páginas.
+          </li>
+          <li>
+            <strong>CSS interno:</strong> fica dentro da tag
+            <strong>&lt;style&gt;</strong> no próprio HTML e vale para aquela
+            página.
+          </li>
+          <li>
+            <strong>CSS inline:</strong> fica no atributo
+            <strong>style</strong> do elemento e altera somente aquele item.
+          </li>
+        </ul>
+        <p style="color: #b23a48; font-weight: bold; text-align: center">
+          Este texto é um exemplo de CSS inline.
+        </p>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>Exercício de introdução ao CSS</p>
+    </footer>
+  </body>
+</html>

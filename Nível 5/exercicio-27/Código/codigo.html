@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Código - Exercício 01</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body style="padding: 2rem; background: #111827; color: #eef2ff">
+    <a
+      href="../index.html"
+      style="
+        color: #60a5fa;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+        font-weight: bold;
+      "
+      >← Voltar para o Portfólio</a
+    >
+
+    <h2>Código do Exercício 01: index.html</h2>
+
+    <!-- Cole seu código HTML entre as tags pre e code, substituindo as chaves <> por &lt; e &gt; -->
+    <pre
+      style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px"
+    ><code>
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Laboratório de cores&lt;/title&gt;
+    &lt;style&gt;
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 32px 20px;
+        color: #243447;
+        background-color: #edf4f2;
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 30px 24px;
+        margin-bottom: 24px;
+        color: white;
+        background-color: #164e63;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0 0 8px;
+      }
+
+      header p {
+        margin: 0;
+      }
+
+      .grade-cores {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+
+      .bloco-cor {
+        display: flex;
+        min-height: 170px;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgb(22 78 99 / 14%);
+        text-align: center;
+      }
+
+      .codigo {
+        padding: 8px 10px;
+        background-color: rgb(255 255 255 / 88%);
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+        font-size: 0.95rem;
+        font-weight: bold;
+      }
+
+      .nome-vermelho {
+        color: 332100;
+        background-color: red;
+      }
+
+      .nome-tomato {
+        color: 332100;
+        background-color: tomato;
+      }
+
+      .hex-azul {
+        color: 332100;
+        background-color: #3478c8;
+      }
+
+      .hex-roxo {
+        color: 332100;
+        background-color: #7b2cbf;
+      }
+
+      .rgb-verde {
+        color: 332100;
+        background-color: rgb(40 114 113);
+      }
+
+      .rgb-amarelo {
+        color: #332100;
+        background-color: rgb(244 201 93);
+      }
+
+      .rgba-laranja {
+        color: #332100;
+        background-color: rgba(230, 126, 34, 0.72);
+      }
+
+      .hsl-verde {
+        color: 332100;
+        background-color: hsl(174, 55%, 35%);
+      }
+
+      .explicacao {
+        padding: 18px 20px;
+        margin-top: 24px;
+        background-color: #ffffff;
+        border-left: 6px solid #f4c95d;
+        border-radius: 6px;
+      }
+
+      .explicacao p {
+        margin: 0;
+      }
+
+      @media (max-width: 850px) {
+        .grade-cores {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 500px) {
+        body {
+          padding: 24px 14px;
+        }
+
+        .grade-cores {
+          grid-template-columns: 1fr;
+        }
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Laboratório de cores&lt;/h1&gt;
+      &lt;p&gt;Veja diferentes maneiras de representar cores em HTML e CSS.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section class="grade-cores"&gt;
+        &lt;div class="bloco-cor nome-vermelho"&gt;
+          &lt;span class="codigo"&gt;red&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bloco-cor nome-tomato"&gt;
+          &lt;span class="codigo"&gt;tomato&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bloco-cor hex-azul"&gt;
+          &lt;span class="codigo"&gt;#3478C8&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bloco-cor hex-roxo"&gt;
+          &lt;span class="codigo"&gt;#7B2CBF&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bloco-cor rgb-verde"&gt;
+          &lt;span class="codigo"&gt;rgb(40, 114, 113)&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bloco-cor rgb-amarelo"&gt;
+          &lt;span class="codigo"&gt;rgb(244, 201, 93)&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bloco-cor rgba-laranja"&gt;
+          &lt;span class="codigo"&gt;rgba(230, 126, 34, 0.72)&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="bloco-cor hsl-verde"&gt;
+          &lt;span class="codigo"&gt;hsl(174, 55%, 35%)&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class="explicacao"&gt;
+        &lt;p&gt;
+          &lt;strong&gt;Nome&lt;/strong&gt; usa palavras prontas,
+          &lt;strong&gt;hexadecimal&lt;/strong&gt; usa seis dígitos,
+          &lt;strong&gt;rgb()&lt;/strong&gt; combina vermelho, verde e azul,
+          &lt;strong&gt;rgba()&lt;/strong&gt; acrescenta transparência e
+          &lt;strong&gt;hsl()&lt;/strong&gt; representa matiz, saturação e luminosidade.
+        &lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+  </body>
+</html>

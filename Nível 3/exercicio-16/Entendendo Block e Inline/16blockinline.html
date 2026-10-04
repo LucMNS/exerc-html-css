@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos Block e Inline</title>
+    <style>
+      :root {
+        --background: #f4f7fb;
+        --text: #172033;
+        --block: #d8e9ff;
+        --block-border: #3478c8;
+        --inline: #ffe0b2;
+        --inline-border: #d87800;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 20px;
+        color: var(--text);
+        background: var(--background);
+        font-family: Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1 {
+        margin-top: 0;
+        color: #205493;
+      }
+
+      .intro,
+      .demonstracao {
+        padding: 20px;
+        margin-bottom: 24px;
+        background: var(--white);
+        border: 1px solid #d5deeb;
+        border-radius: 8px;
+      }
+
+      .bloco {
+        padding: 12px 16px;
+        margin: 12px 0;
+        background: var(--block);
+        border-left: 6px solid var(--block-border);
+      }
+
+      .inline {
+        padding: 3px 6px;
+        background: var(--inline);
+        border: 1px solid var(--inline-border);
+        border-radius: 4px;
+      }
+
+      .legenda {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 560px) {
+        body {
+          padding: 24px 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Entendendo Block e Inline</h1>
+
+    <div class="intro">
+      <p>
+        Elementos <strong class="inline">block</strong> ocupam toda a largura
+        disponível e começam em uma nova linha. Elementos
+        <strong class="inline">inline</strong> ocupam apenas o espaço do seu
+        conteúdo e permanecem na mesma linha.
+      </p>
+    </div>
+
+    <!-- div é um elemento block. -->
+    <div class="demonstracao bloco">
+      <!-- h2 é um elemento block. -->
+      <h2>Elementos Block</h2>
+
+      <!-- p é um elemento block. -->
+      <p class="bloco">
+        Este paragrafo e um elemento block. O proximo paragrafo ficara abaixo
+        dele, mesmo que ainda exista espaco na linha.
+      </p>
+
+      <!-- p é um elemento block. -->
+      <p class="bloco">
+        Este e outro elemento block, destacado em azul para facilitar a
+        visualizacao da quebra de linha.
+      </p>
+    </div>
+
+    <!-- div é um elemento block. -->
+    <div class="demonstracao">
+      <!-- h2 é um elemento block. -->
+      <h2>Elementos Inline</h2>
+
+      <!-- p é um elemento block; span, strong e a são elementos inline. -->
+      <p>
+        Aqui temos um
+        <!-- span é um elemento inline. -->
+        <span class="inline">span inline</span>, uma
+        <!-- strong é um elemento inline. -->
+        <strong class="inline">strong inline</strong> e um
+        <!-- a é um elemento inline. -->
+        <a
+          class="inline"
+          href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+          >link inline</a
+        >, todos destacados em laranja e seguindo na mesma linha.
+      </p>
+    </div>
+
+    <div class="legenda">
+      <span class="bloco">Azul: elementos block</span>
+      <span class="inline">Laranja: elementos inline</span>
+    </div>
+  </body>
+</html>
